@@ -2,10 +2,11 @@ from graphics import *
 from random import randrange
 from time import sleep
 
-dimension = eval(input("Enter maze size (1-15): "))
+sys.setrecursionlimit(10000)
+dimension = eval(input("Enter maze size (1-40): "))
 while True:
-    if dimension < 1 or dimension > 15:
-        dimension = eval(input("Enter maze size (1-15): "))
+    if dimension < 1 or dimension > 40:
+        dimension = eval(input("Enter maze size (1-40): "))
     else: break
     
 class Maze():
