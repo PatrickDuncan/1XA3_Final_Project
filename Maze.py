@@ -209,11 +209,5 @@ class Maze():
             i+=1
         return path
             
-m=Maze(dimension); m.main()
-
-
-
-
-
-        
-            
+if __name__ == "__main__":
+    Maze(dimension).main()
